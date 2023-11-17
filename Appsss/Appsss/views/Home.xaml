@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Appsss.views.Home">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Style="{StaticResource Secundary_Page_Label}" Text="Домашняя страница!"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+
+                <!-- Добавление 10 изображений списком сверху вниз -->
+                <Image Source="cat1.png" Aspect="AspectFit" />
+                <Image Source="cat2.png" Aspect="AspectFit" />
+                <Image Source="cat3.png" Aspect="AspectFit" />
+                <Image Source="cat1.png" Aspect="AspectFit" />
+                <Image Source="cat2.png" Aspect="AspectFit" />
+                <Image Source="cat3.png" Aspect="AspectFit" />
+                <Image Source="cat1.png" Aspect="AspectFit" />
+                <Image Source="cat2.png" Aspect="AspectFit" />
+                <Image Source="claw1.png" Aspect="AspectFit" />
+                <Image Source="cat1.png" Aspect="AspectFit" />
+                <Image Source="cat2.png" Aspect="AspectFit" />
+                <Image Source="cat3.png" Aspect="AspectFit" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

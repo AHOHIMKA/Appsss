@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Appsss"
+       xmlns:views="clr-namespace:Appsss.views"
+       xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+       xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+       Shell.BackgroundColor="#B88355"
+       Shell.ForegroundColor="#DDDFCF"
+       Shell.TabBarBackgroundColor="#B88355"
+       Shell.TabBarForegroundColor="#DDDFCF"
+       x:Class="Appsss.AppShell">
+
+    <views:Home Title="Главная" IconImageSource="homeicon.png" />
+    <views:inform Title="Инфо" IconImageSource="info.png" />
+
+</TabbedPage>

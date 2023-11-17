@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Appsss"
+       xmlns:views="clr-namespace:Appsss.views"
+       xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+       Shell.BackgroundColor="#B88355"
+       Shell.ForegroundColor="#DDDFCF"
+       Shell.TabBarBackgroundColor="#B88355"
+       Shell.TabBarForegroundColor="#DDDFCF"
+       x:Class="Appsss.views.TabbedPageAll">
+
+    <TabBar>
+        <ShellContent Title="Главная" Icon="home.png" ContentTemplate="{DataTemplate views:Home  }" />
+        <ShellContent Title="Инфо" Icon="info.png" ContentTemplate="{DataTemplate views:inform}" />
+    </TabBar>
+
+</Shell>
