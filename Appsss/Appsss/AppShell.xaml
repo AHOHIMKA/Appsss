@@ -1,17 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:Appsss"
        xmlns:views="clr-namespace:Appsss.views"
        xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
        xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+       xmlns:v="clr-namespace:Appsss"
        Shell.BackgroundColor="#B88355"
        Shell.ForegroundColor="#DDDFCF"
        Shell.TabBarBackgroundColor="#B88355"
        Shell.TabBarForegroundColor="#DDDFCF"
        x:Class="Appsss.AppShell">
 
-    <views:Home Title="Главная" IconImageSource="homeicon.png" />
-    <views:inform Title="Инфо" IconImageSource="info.png" />
 
-</TabbedPage>
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource WarningColor}" />
+                <!--  <Setter Property="Shell.ForegroundColor" Value="{}" /> -->
+                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+
+            </Style>
+        </ResourceDictionary>
+    </Shell.Resources>
+
+
+
+
+
+
+    <TabBar>
+        <Tab>
+            <ShellContent>
+                <v:MainContent/>
+            </ShellContent>
+        </Tab>
+    </TabBar>
+
+</Shell>

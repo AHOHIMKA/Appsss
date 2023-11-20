@@ -11,7 +11,7 @@ using Xamarin.Forms.Xaml;
 
 namespace Appsss
 {
-	public partial class AppShell : Xamarin.Forms.TabbedPage
+	public partial class AppShell : Shell
     {
 
         public AppShell()
